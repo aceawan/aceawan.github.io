@@ -1,80 +1,126 @@
 <html>
-	<head>
-		<title>Finnish Lookup Resources</title>
-	</head>
-	<body>
-		Webpage by <a href="https://github.com/rwdsubi">rwdsubi</a>
-		<br/>
-		<h2>
-		Wiktionary
-		</h2>
-		<input type="text" id="wikiSearchTxtBox" onkeypress="redirectToWiki(event)" autofocus />
-		<script type="text/javascript">			
-			function redirectToWiki(textevent){
-				if(textevent.keyCode === 13){
-					window.location.href = "http://wiktionary.org/wiki/" + document.getElementById('wikiSearchTxtBox').value + "#Finnish";
+<head>
+	<title>Finnish Lookup Resources</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<h1>Finnish Lookup Resources</h1>
+	Webpage by <a href="https://github.com/rwdsubi">rwdsubi</a>
+	<br/>
+	<h2>Sanakirjat</h2>
+	<div class="row">
+		<div class="column">
+			<h3>
+				Wiktionary
+			</h3>
+			<input type="text" id="wikiSearchTxtBox" onkeypress="redirectToWiki(event)" autofocus />
+			<script type="text/javascript">			
+				function redirectToWiki(textevent){
+					if(textevent.keyCode === 13){
+						window.location.href = "http://wiktionary.org/wiki/" + document.getElementById('wikiSearchTxtBox').value + "#Finnish";
+					}
 				}
-			}
-		</script>
-		<br />
-		<h2>
-			Kielitoimiston sanakirja
-		</h2>
-		<input type="text" id="ksanakirjaTxtBox" onkeypress="redirectToKS(event)" autofocus />
-		<script type="text/javascript">			
-			function redirectToKS(textevent){
-				if(textevent.keyCode === 13){
-					window.location.href = "https://www.kielitoimistonsanakirja.fi/#/" + document.getElementById('ksanakirjaTxtBox').value;
+			</script>
+		</div>
+		<div class="column">
+			<h3>
+				Kielitoimiston sanakirja
+			</h3>
+			<input type="text" id="ksanakirjaTxtBox" onkeypress="redirectToKS(event)" autofocus />
+			<script type="text/javascript">			
+				function redirectToKS(textevent){
+					if(textevent.keyCode === 13){
+						window.location.href = "https://www.kielitoimistonsanakirja.fi/#/" + document.getElementById('ksanakirjaTxtBox').value;
+					}
 				}
-			}
-		</script>
-		<br />
-		<h2>
-		Forvo
-		</h2>
-		<input type="text" id="forvoSearchTxtBox" onkeypress="redirectToForvo(event)" autofocus />
-		<script type="text/javascript">			
-			function redirectToForvo(textevent){
-				if(textevent.keyCode === 13){
-					window.location.href = "https://forvo.com/word/" + document.getElementById('forvoSearchTxtBox').value + "/#fi";
+			</script>
+		</div>
+		<div class="column">
+			<h3>
+				Kielitomiston sanakirja 2018
+			</h3>
+			<input type="text" id="ksanakirja18TxtBox" onkeypress="redirectToKS18(event)" autofocus />
+			<script type="text/javascript">			
+				function redirectToKS18(textevent){
+					if(textevent.keyCode === 13){
+						window.location.href = "https://2018.kielitoimistonsanakirja.fi/" + document.getElementById('ksanakirja18TxtBox').value;
+					}
 				}
-			}
-		</script>
-		<h2>
-		Uusi Kielemme
-		</h2>
-		<input type="text" id="uusiSearchTxtBox" onkeypress="redirectToUusi(event)" autofocus />
-		<script type="text/javascript">			
-			function redirectToUusi(textevent){
-				if(textevent.keyCode === 13){
-					window.location.href = "https://uusikielemme.fi/?s=" + document.getElementById('uusiSearchTxtBox').value;
+			</script>
+		</div>
+		<div class="column">
+			<h3>Glosbe</h3>
+			<input type="text" id="glosbeTxtBox" onkeypress="redirectToGlosbe(event)" autofocus />
+			<script type="text/javascript">			
+				function redirectToGlosbe(textevent){
+					if(textevent.keyCode === 13){
+						window.location.href = "https://glosbe.com/fi/en/" + document.getElementById('glosbeTxtBox').value;
+					}
 				}
-			}
-		</script>
-		<br />
-		<h2>
-		RandomFinnishLesson
-		</h2>
-		<input type="text" id="rflSearchTxtBox" onkeypress="redirectToRFL(event)" autofocus />
-		<script type="text/javascript">			
-			function redirectToRFL(textevent){
-				if(textevent.keyCode === 13){
-					window.location.href = "https://randomfinnishlesson.blogspot.com/search?q=" + document.getElementById('rflSearchTxtBox').value;
+			</script>
+		</div>
+	</div>
+	<br />
+	<h2>Pronunciation</h2>
+	<div class="row">
+		<div class="column">
+			<h3>
+				Forvo
+			</h3>
+			<input type="text" id="forvoSearchTxtBox" onkeypress="redirectToForvo(event)" autofocus />
+			<script type="text/javascript">			
+				function redirectToForvo(textevent){
+					if(textevent.keyCode === 13){
+						window.location.href = "https://forvo.com/word/" + document.getElementById('forvoSearchTxtBox').value + "/#fi";
+					}
 				}
-			}
-		</script>
-		<br />
-				<h2>
-		Google Images
-		</h2>
-		<input type="text" id="googleSearchTxtBox" onkeypress="redirectToGoogle(event)" autofocus />
-		<script type="text/javascript">			
-			function redirectToGoogle(textevent){
-				if(textevent.keyCode === 13){
-					window.location.href = "https://www.google.fi/search?q=" + document.getElementById('googleSearchTxtBox').value + "&source=lnms&tbm=isch";
+			</script>
+		</div>
+	</div>
+	<h2>Grammar lessons</h2>
+	<div class="row">
+		<div class="column">
+			<h3>
+				Uusi Kielemme
+			</h3>
+			<input type="text" id="uusiSearchTxtBox" onkeypress="redirectToUusi(event)" autofocus />
+			<script type="text/javascript">			
+				function redirectToUusi(textevent){
+					if(textevent.keyCode === 13){
+						window.location.href = "https://uusikielemme.fi/?s=" + document.getElementById('uusiSearchTxtBox').value;
+					}
 				}
-			}
-		</script>
-		<br />
-	</body>
+			</script>
+		</div>
+		<div class="column">
+			<h3>
+				RandomFinnishLesson
+			</h3>
+			<input type="text" id="rflSearchTxtBox" onkeypress="redirectToRFL(event)" autofocus />
+			<script type="text/javascript">			
+				function redirectToRFL(textevent){
+					if(textevent.keyCode === 13){
+						window.location.href = "https://randomfinnishlesson.blogspot.com/search?q=" + document.getElementById('rflSearchTxtBox').value;
+					}
+				}
+			</script>
+		</div>
+	</div>
+	<h2>Others</h2>
+	<div class="row">
+		<div class="column">
+			<h3>
+				Google Images
+			</h3>
+			<input type="text" id="googleSearchTxtBox" onkeypress="redirectToGoogle(event)" autofocus />
+			<script type="text/javascript">			
+				function redirectToGoogle(textevent){
+					if(textevent.keyCode === 13){
+						window.location.href = "https://www.google.fi/search?q=" + document.getElementById('googleSearchTxtBox').value + "&source=lnms&tbm=isch";
+					}
+				}
+			</script>
+		</div>
+	</div>
+</body>
 </html>
