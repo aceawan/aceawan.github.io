@@ -2,8 +2,15 @@ body {
 	font-family: "Open Sans";
 	max-width: 60em;
 	margin: auto;
-	padding-bottom: 1em;
-	padding-top: 1em;
+}
+
+body {
+	background-color: #86ad40;
+}
+
+#content {
+	padding: 10px;
+	background-color: white;
 }
 
  .column {
