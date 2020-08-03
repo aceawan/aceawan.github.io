@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Finnish Lookup Resources</title>
+	</head>
+	<body>
+		<h2>
+		Wiktionary
+		</h2>
+		<input type="text" id="wikiSearchTxtBox" onkeypress="redirectToWiki(event)" autofocus />
+		<script type="text/javascript">			
+			function redirectToWiki(textevent){
+				if(textevent.keyCode === 13){
+					window.location.href = "http://wiktionary.org/wiki/" + document.getElementById('wikiSearchTxtBox').value + "#Finnish";
+				}
+			}
+		</script>
+		<br />
+		<h2>
+		Forvo
+		</h2>
+		<input type="text" id="forvoSearchTxtBox" onkeypress="redirectToForvo(event)" autofocus />
+		<script type="text/javascript">			
+			function redirectToForvo(textevent){
+				if(textevent.keyCode === 13){
+					window.location.href = "https://forvo.com/word/" + document.getElementById('forvoSearchTxtBox').value + "/#fi";
+				}
+			}
+		</script>
+		<h2>
+		Uusi Kielemme
+		</h2>
+		<input type="text" id="uusiSearchTxtBox" onkeypress="redirectToUusi(event)" autofocus />
+		<script type="text/javascript">			
+			function redirectToUusi(textevent){
+				if(textevent.keyCode === 13){
+					window.location.href = "https://uusikielemme.fi/?s=" + document.getElementById('uusiSearchTxtBox').value;
+				}
+			}
+		</script>
+		<br />
+		<h2>
+		RandomFinnishLesson
+		</h2>
+		<input type="text" id="rflSearchTxtBox" onkeypress="redirectToRFL(event)" autofocus />
+		<script type="text/javascript">			
+			function redirectToRFL(textevent){
+				if(textevent.keyCode === 13){
+					window.location.href = "https://randomfinnishlesson.blogspot.com/search?q=" + document.getElementById('rflSearchTxtBox').value;
+				}
+			}
+		</script>
+		<br />
+				<h2>
+		Google Images
+		</h2>
+		<input type="text" id="googleSearchTxtBox" onkeypress="redirectToGoogle(event)" autofocus />
+		<script type="text/javascript">			
+			function redirectToGoogle(textevent){
+				if(textevent.keyCode === 13){
+					window.location.href = "https://www.google.fi/search?q=" + document.getElementById('googleSearchTxtBox').value + "&source=lnms&tbm=isch";
+				}
+			}
+		</script>
+		<br />
+	</body>
+</html>
