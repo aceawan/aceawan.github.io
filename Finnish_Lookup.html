@@ -16,6 +16,18 @@
 		</script>
 		<br />
 		<h2>
+			Kielitoimiston sanakirja
+		</h2>
+		<input type="text" id="ksanakirjaTxtBox" onkeypress="redirectToKS(event)" autofocus />
+		<script type="text/javascript">			
+			function redirectToKS(textevent){
+				if(textevent.keyCode === 13){
+					window.location.href = "https://www.kielitoimistonsanakirja.fi/#/" + document.getElementById('ksanakirjaTxtBox').value;
+				}
+			}
+		</script>
+		<br />
+		<h2>
 		Forvo
 		</h2>
 		<input type="text" id="forvoSearchTxtBox" onkeypress="redirectToForvo(event)" autofocus />
