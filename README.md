@@ -1,3 +1,3 @@
 # My github hosted webpages
 
-The original author of the finnish lookup webpage is @rwdsubi
+The original author of the finnish lookup webpage is [@rwdsubi](https://github.com/rwdsubi)
