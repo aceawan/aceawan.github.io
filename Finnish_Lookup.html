@@ -121,6 +121,19 @@
 				}
 			</script>
 		</div>
+		<div class="column">
+			<h3>
+				Papunet KuvaPankki
+			</h3>
+			<input type="text" id="papuSearchTxtBox" onkeypress="redirectToPapu(event)" autofocus />
+			<script type="text/javascript">			
+				function redirectToPapu(textevent){
+					if(textevent.keyCode === 13){
+						window.location.href = "https://kuvapankki.papunet.net/haku/" + document.getElementById('papuSearchTxtBox').value;
+					}
+				}
+			</script>
+		</div>
 	</div>
 </body>
 </html>
