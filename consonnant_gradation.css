@@ -1,0 +1,45 @@
+html {
+    font-family: Verdana, Arial;
+    font-size: large;
+}
+
+table {
+    margin-top: 1em;
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+}
+
+th {
+    background-color: rgb(235,235,235);
+}
+
+td {
+    text-align: center;
+}
+
+.strong::before {
+    content : "strong";
+}
+
+.strong {
+    background-color: rgb(245,211,211);
+}
+
+.weak::before {
+    content: "weak";
+}
+
+.weak {
+    background-color: rgb(213,245,211);
+}
+
+.mixed {
+    background-color: rgb(252,222,139);
+}
