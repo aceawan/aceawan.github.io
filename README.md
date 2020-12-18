@@ -1,4 +1,7 @@
-# My github hosted webpages
+# My finnish webpages
+
+- Search on different websites, dictionnaries on the [lookup page](./Finnish_Lookup.html).
+- See all the rules of consonant gradation on [one page](./consonant_gradation.html).
 
 The original author of the finnish lookup webpage is [@rwdsubi](https://github.com/rwdsubi).
 
